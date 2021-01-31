@@ -1,0 +1,18 @@
+{
+  "scheme": "custom",
+  "schemeDefinition": "major.minor[.build][->patch]",
+  "versionFile": "./package.json",
+  "files": [{
+    "path": "hello.bas",
+    "line": 1
+  }, {
+    "path": "hello.bas",
+    "line": 2
+  }],
+  "rules": [{
+      "trigger": "manual",
+      "bump": "minor",
+      "branch": "main",
+      "reset": "build"
+  }]
+}
