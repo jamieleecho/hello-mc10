@@ -20,7 +20,7 @@ jobs:
       - uses: ncipollo/release-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: "hello.c10"
+          artifacts: "./*.c10"
           allowUpdates: true
           draft: true
           name: "${{ format('{0} {1}', env.REPO_NAME, env.RELEASE_TAG) }}"
