@@ -55,8 +55,7 @@ This repo assumes the following GitHub workflow is being used
   -- This file
 * [build.sh](https://github.com/jamieleecho/hello-mc10/blob/main/build.sh)
   -- Bash script that compiles `*.bas` files into `*.c10` files.
-* [bump-info.json]
-  (https://github.com/jamieleecho/hello-mc10/blob/main/bump-info.json)
+* [bump-info.json](https://github.com/jamieleecho/hello-mc10/blob/main/bump-info.json)
   -- Specifies what files have version information that has to be bumped.
 * [hello.bas](https://github.com/jamieleecho/hello-mc10/blob/main/hello.bas)
   -- the BASIC file to compile.
@@ -71,6 +70,19 @@ This repo assumes the following GitHub workflow is being used
 * Use this value to create an `ADMIN_TOKEN` via its repository settings.
 * View the Actions of the repo and run `Bump and Tag Version Workflow` on the
   main branch.
-* This will generate a new pre-release that you can update on the repo's
-  Releases page. The pre-release will come preconfigured with a name, tag and
-  built `*.c10` files.
+* This will generate a new pre-release that you can look at on your repos
+  Releases page[here]. You can easily update and finalize this pre-release
+  as it will already be configured with a name, tag and built `*.c10` files.
+* Look at
+  [hello.bas](https://github.com/jamieleecho/hello-mc10/blob/main/hello.bas)
+  and observe how the version information in it got updated.
+
+### Next Steps
+Play around with the repo to see what else you can do. For example:
+* Try submitting a Pull Request to your new repo (not to the jamieleecho one).
+* Check out your repo's Action page.
+* What happens when you accept the Pull Request?
+* What happens when you add a new `*.bas` file?
+* What file do you have to update to update version info in your new `*.bas`
+  file?
+
