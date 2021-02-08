@@ -77,6 +77,19 @@ This repo assumes the following GitHub workflow is being used
   [hello.bas](https://github.com/jamieleecho/hello-mc10/blob/main/hello.bas)
   and observe how the version information in it got updated.
 
+### Where do the MC-10 specific commands come from?
+[.github/workflows/build.yml](https://github.com/jamieleecho/hello-mc10/blob/main/.github/workflows/build.yml)
+and [.github/workflows/make-release.yml](https://github.com/jamieleecho/hello-mc10/blob/main/.github/workflows/make-release.yml)
+utilize the [coco-dev](https://hub.docker.com/r/jamieleecho/coco-dev) docker
+image that is defined on GitHub over [here](https://github.com/jamieleecho/coco-dev).
+
+What is [Docker](https://www.docker.com/)? You can think of Docker as a
+lightweight mechanism for defining virtual machines that can be defined in one
+place and then invoked in many other places. Basically coco-dev is a virtual
+machine image that defines a lot of MC-10 and CoCo stuff that GitHub Actions
+invokes. Please note that this explanation is simplified a bit to convey
+the essence of what is going on.
+
 ### Next Steps
 Play around with the repo to see what else you can do. For example:
 * Try submitting a Pull Request to your new repo (not to the jamieleecho one).
